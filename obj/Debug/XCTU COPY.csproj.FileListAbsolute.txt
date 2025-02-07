@@ -1,0 +1,22 @@
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\bin\Debug\XCTU COPY.exe.config
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\bin\Debug\XCTU COPY.exe
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\bin\Debug\XCTU COPY.pdb
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.csproj.AssemblyReference.cache
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.csproj.SuggestedBindingRedirects.cache
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\obj\Debug\XCTU_COPY.Form1.resources
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\obj\Debug\XCTU_COPY.Properties.Resources.resources
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.csproj.GenerateResource.cache
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.csproj.CoreCompileInputs.cache
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.exe
+D:\Khushboo\Khushboo\LT PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.pdb
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\bin\Debug\XCTU COPY.exe.config
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\bin\Debug\XCTU COPY.exe
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\bin\Debug\XCTU COPY.pdb
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.csproj.AssemblyReference.cache
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.csproj.SuggestedBindingRedirects.cache
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\obj\Debug\XCTU_COPY.Form1.resources
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\obj\Debug\XCTU_COPY.Properties.Resources.resources
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.csproj.GenerateResource.cache
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.csproj.CoreCompileInputs.cache
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.exe
+D:\Khushboo\Khushboo\FALTU\PRACTICE\XCTU COPY\obj\Debug\XCTU COPY.pdb
