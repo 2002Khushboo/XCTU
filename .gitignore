@@ -1,0 +1,18 @@
+# Build and publish folders
+bin/
+obj/
+publish/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.cache
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Ignore generated files
+*.exe
+*.dll
