@@ -3,22 +3,26 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.IO;
-using System.Threading.Tasks;
 using System.Text;
 
 namespace XCTU_COPY
 {
     public partial class Form1 : Form
     {
-        bool flag = false;
         public Form1()
         {
             InitializeComponent();
+            #if MOCK
+                serialPort = new MockSerialPort();
+                MessageBox.Show("Running in Mock Mode. No hardware required.");
+            #else
+                serialPort = new SerialPort();
+            #endif
+                serialPort.DataReceived += serialPort_DataReceived;
+                serialPort.ErrorReceived += serialPort_ErrorReceived;
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
         private void buttonScanPort_Click(object sender, EventArgs e)
         {
@@ -126,7 +130,6 @@ namespace XCTU_COPY
 
             textBox1.Text = "";
         }
-
         private void button01_Click(object sender, EventArgs e)
         {
             SendData(01);
@@ -141,15 +144,11 @@ namespace XCTU_COPY
             serialPort.Write(dataToSend, 0, dataToSend.Length);
             string hex = BitConverter.ToString(dataToSend);
             textBox1.AppendText(hex + Environment.NewLine);
-            /*string received = serialPort.ReadLine();
-            textBox1.AppendText(received + Environment.NewLine);*/
         }
-
         private void button02_Click(object sender, EventArgs e)
         {
             SendData(0x02);
         }
-
         private void button09_Click(object sender, EventArgs e)
         {
             SendData(0x09);
@@ -157,48 +156,11 @@ namespace XCTU_COPY
         private StringBuilder dataBuffer = new StringBuilder();
         private void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            /*string received = serialPort.ReadExisting();
-            AppendText(received + Environment.NewLine);
-            Console.WriteLine(received);*/
-            
-            
-            // Read all the data from the serial port
             string received = serialPort.ReadLine();
             Console.WriteLine(received);
             this.Invoke(new MethodInvoker(delegate {
                 AppendText(received + Environment.NewLine);
             }));
-            //textBox1.AppendText(received + Environment.NewLine);
-            // Append received data to the buffer
-            //dataBuffer.Append(received);
-
-            //ProcessBuffer();
-        }
-
-        private void ProcessBuffer()
-        {
-            string bufferString = dataBuffer.ToString();
-
-            int startIdx, endIdx;
-
-            while ((startIdx = bufferString.IndexOf('$')) != -1 && (endIdx = bufferString.IndexOf('#', startIdx)) != -1)
-            {
-                // Extract the complete message
-                string completeMessage = bufferString.Substring(startIdx, endIdx - startIdx + 1);
-
-                // Remove the processed message from the buffer
-                dataBuffer.Remove(startIdx, endIdx - startIdx + 1);
-
-                // Update the buffer string to reflect the removal
-                bufferString = dataBuffer.ToString();
-
-                // Handle the complete message (e.g., append to text box)
-                this.Invoke(new MethodInvoker(delegate {
-                    AppendText(completeMessage + Environment.NewLine);
-                }));
-
-                Console.WriteLine(completeMessage);
-            }
         }
         private void serialPort_ErrorReceived(object sender, SerialErrorReceivedEventArgs e)
         {
@@ -230,32 +192,26 @@ namespace XCTU_COPY
         {
             SendData(0x0D);
         }
-
         private void button03_Click(object sender, EventArgs e)
         {
             SendData(0x03);
         }
-
         private void button04_Click(object sender, EventArgs e)
         {
             SendData(0x04);
         }
-
         private void button05_Click(object sender, EventArgs e)
         {
             SendData(0x05);
         }
-
         private void button06_Click(object sender, EventArgs e)
         {
             SendData(0x06);
         }
-
         private void button07_Click(object sender, EventArgs e)
         {
             SendData(0x07);
         }
-
         private void button08_Click(object sender, EventArgs e)
         {
             SendData(0x08);
