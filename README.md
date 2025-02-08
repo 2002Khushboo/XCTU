@@ -73,12 +73,12 @@ The **XCTU Copy CAN Data Logger** is a desktop application built using C# and Wi
 - Debugging CAN-based control systems
 - Data analytics for hardware optimization
 
-## **Contributing**
-Contributions are welcome! Please follow the guidelines below:
-1. Fork the repository
-2. Create a new branch (`feature/your-feature-name`)
-3. Commit your changes
-4. Push the branch and open a pull request
+## Contributing
+We welcome contributions! Follow these steps to get started:
+1. Fork the repository.
+2. Clone your fork and create a feature branch.
+3. Commit changes and submit a Pull Request.
+4. Wait for review and approval.
 
 ## **License**
 This project is licensed under the [MIT License](LICENSE).
